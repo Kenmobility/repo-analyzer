@@ -10,7 +10,7 @@ This Go application analyzes the structure and file sizes of a public GitHub rep
 ## Usage
 1. Clone the project:
    ```bash
-   git clone https://github.com/yourusername/github-analyzer.git
+   git clone https://github.com/kenmobility/repo-analyzer.git
 
 2. Build the application:
    ```bash
