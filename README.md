@@ -12,20 +12,23 @@ This Go application analyzes the structure and file sizes of a public GitHub rep
    ```bash
    git clone https://github.com/kenmobility/repo-analyzer.git
 
-2. Build the application:
+2. CD into the project:
    ```bash
-   go build -o analyzer
+   cd repo-analyzer
 
-3. Run the application:
+3. Build the application:
    ```bash
-   ./analyzer <repository-url>
+   go build -o analyze
+
+4. Run the application:
+   ```bash
+   ./analyze <repository-url>
 
 ## Tests
    Run tests with 
    ```bash
    go test ./... -v
    ```
-
 
 ## Example Output
  ```json
