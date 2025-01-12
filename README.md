@@ -20,7 +20,7 @@ This Go application analyzes the structure and file sizes of a public GitHub rep
    ```bash
    go build -o analyze
 
-4. Run the application:
+4. Run the application with any public github repository-url as argument:
    ```bash
    ./analyze <repository-url>
 
