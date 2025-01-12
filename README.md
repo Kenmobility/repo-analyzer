@@ -7,7 +7,7 @@ This Go application analyzes the structure and file sizes of a public GitHub rep
 - Recursively analyzes the file structure.
 - Outputs the structure and sizes in JSON format.
 
-## Usage
+## How to Run
 1. Clone the project:
    ```bash
    git clone https://github.com/kenmobility/repo-analyzer.git
@@ -16,7 +16,7 @@ This Go application analyzes the structure and file sizes of a public GitHub rep
    ```bash
    cd repo-analyzer
 
-3. Build the application:
+3. Build the project:
    ```bash
    go build -o analyze
 

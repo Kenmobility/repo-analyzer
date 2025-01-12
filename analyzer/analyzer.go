@@ -1,5 +1,3 @@
-// Package analyzer provides utilities for analyzing folder structures
-// and calculating file sizes in a repository.
 package analyzer
 
 import (
@@ -19,7 +17,6 @@ type FolderInfo struct {
 	Name    string       `json:"name"`
 	Files   []FileInfo   `json:"files"`
 	Folders []FolderInfo `json:"folders"`
-	//Size    string       `json:"size"`
 }
 
 // AnalyzeFolder recursively analyzes the given folder and returns its structure
@@ -33,8 +30,7 @@ type FolderInfo struct {
 // - error: An error object if any issues occur during traversal.
 func AnalyzeFolder(rootPath string) (FolderInfo, int64, error) {
 	folderInfo := FolderInfo{
-		Name: filepath.Base(rootPath),
-		//Size:    "0 B",
+		Name:    filepath.Base(rootPath),
 		Files:   []FileInfo{},   // Initialize as empty slice
 		Folders: []FolderInfo{}, // Initialize as empty slice
 	}
@@ -83,6 +79,5 @@ func AnalyzeFolder(rootPath string) (FolderInfo, int64, error) {
 		}
 	}
 
-	//folderInfo.Size = formatSize(totalSize)
 	return folderInfo, totalSize, nil
 }

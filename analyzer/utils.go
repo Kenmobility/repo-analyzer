@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 )
 
-// formatSize converts a file size in bytes to a human-readable string format.
+// FormatSize converts a file size in bytes to a human-readable string format.
 func FormatSize(sizeInBytes int64) string {
 	const (
 		KB = 1024
@@ -37,7 +37,6 @@ func isDirectory(path string) (bool, error) {
 }
 
 // safeJoin joins path segments and ensures the resulting path does not escape the root directory.
-// This is useful for preventing directory traversal attacks.
 func safeJoin(root, subPath string) (string, error) {
 	if root == "" {
 		return "", fmt.Errorf("root path cannot be empty")
